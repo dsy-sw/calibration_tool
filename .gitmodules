@@ -1,0 +1,3 @@
+[submodule "src/sub_modules"]
+	path = src/sub_modules
+	url = https://git.ums.synology.me/integrated-platform/sub_modules.git
