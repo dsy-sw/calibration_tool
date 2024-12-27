@@ -1,0 +1,26 @@
+===================================================
+
+*RTK Setting CMD
+serialconfig com1 115200
+interfacemode com1 rtcmv3 none off
+
+*Ethernet Setting CMD
+ethconfig etha auto auto auto auto
+icomconfig icom1 udp :2000
+ipconfig etha static 192.168.74.10 255.255.255.0 192.168.74.1
+saveethernetdata
+
+*Setting save CMD
+saveconfig
+
+*Reset CMD
+reset
+freset
+
+*Data update CMD
+log icom1 bestposb ontime 0.1
+log icom1 inspvasb ontime 0.01
+
+ 
+
+===================================================
