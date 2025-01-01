@@ -1,6 +1,7 @@
 from dataclasses import dataclass, field
+from math import ceil
 
-from driver.lidar.velodyne.constant.device import DeviceModel, Mode
+from driver.lidar.velodyne.constant.device import PACKET_RATE, DeviceModel, Mode
 
 
 @dataclass
@@ -12,3 +13,7 @@ class VelodyneConfig:
     rpm: int = 600
     mode: Mode = field(default_factory=Mode.STRONGEST)
     is_main_frame: bool = False
+    npacket: float = 0
+    
+    def __post_init__(self):
+        self.npacket = ceil(PACKET_RATE[self.model.name] / (self.rpm / 60.0))
