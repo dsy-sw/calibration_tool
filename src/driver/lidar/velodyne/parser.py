@@ -11,3 +11,14 @@ class VelodyneParser:
 class Velodyne16Parser:
     def generate_pointcloud(cls, scan_msg):
         cls.unpack(scan_msg)
+        
+    def unpack(cls, scan_msg):
+        pass
+    
+    
+class Velodyne32Parser:
+    def generate_pointcloud(cls, scan_msg):
+        cls.unpack(scan_msg)
+
+    def unpack(cls, scan_msg):
+        pass

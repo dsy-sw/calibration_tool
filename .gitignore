@@ -1,11 +1,19 @@
+# setting file
 /.vscode
 
+# temp file
 **/test
 **/temp
 
+# cache file
 **pycache**
 *.pyc
 
+# data log
 /logs
 /log
 *.log
+
+
+# docs
+*/hardware
