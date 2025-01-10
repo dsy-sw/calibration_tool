@@ -1,5 +1,7 @@
 from dataclasses import dataclass, field
 
+from common.proto.message import Header
+
 
 @dataclass
 class PointXYZIT:
@@ -11,7 +13,6 @@ class PointXYZIT:
     
 
 @dataclass
-class PointCloud:
-    frame_id: str = ''
+class PointCloud(Header):
     point: list[PointXYZIT] = field(default_factory=[])
     measurement_time: float = 0
