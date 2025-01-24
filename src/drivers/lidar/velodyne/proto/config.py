@@ -1,7 +1,8 @@
 from dataclasses import dataclass, field
 from math import ceil
 
-from drivers.lidar.velodyne.constant.device import PACKET_RATE, DeviceModel, Mode
+from src.drivers.lidar.velodyne.constant.velodyne_packet import PACKET_RATE
+from src.drivers.lidar.velodyne.constant.device import DeviceModel, Mode
 
 
 @dataclass

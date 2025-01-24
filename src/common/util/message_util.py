@@ -2,7 +2,7 @@
 
 from time import time
 
-from common.proto.message import Header
+from src.common.proto.message import Header
 
 
 def fill_header(module_name: str, message: Header, frame_id = '') -> None:

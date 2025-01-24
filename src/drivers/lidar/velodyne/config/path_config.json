@@ -1,0 +1,6 @@
+{
+    "calibration":{
+        "Velodyne16Parser":"./src/drivers/lidar/velodyne/calibration/VLP16_calibration.yaml",
+        "Velodyne32Parser":"./src/drivers/lidar/velodyne/calibration/VLP32C_calibration.yaml"
+        }
+}
